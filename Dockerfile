@@ -7,10 +7,10 @@ WORKDIR /app
 COPY . /app/
 
 # Install FFmpeg
-RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y ffmpeg
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Command to run your Python script
 CMD ["python3", "bot.py"]
