@@ -34,7 +34,7 @@ async def query_metadata(bot: Client, query: CallbackQuery):
         user_metadata = await jishubotz.get_metadata_code(query.from_user.id)
 
         if bool(eval(_bool)):
-            await jishubotz.set_metadata(query.from_user.id, bool_meta=False)
+            await jishubotz.set_metadata(query.from_user.id, bool_meta=True)
             await query.message.edit(f"**Your Current Metadata :-**\n\n➜ `{user_metadata}` ", reply_markup=InlineKeyboardMarkup(OFF))
 
         else:
