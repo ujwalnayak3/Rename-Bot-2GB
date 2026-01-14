@@ -7,25 +7,25 @@ services:
     startCommand: python bot.py
     repo: https://github.com/TechifyBots/Rename-Bot-2GB
     branch: main
-    autoDeploy: false
+    autoDeploy: True
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        sync: True
       - key: API_ID
-        sync: false
+        sync: True
       - key: API_HASH
-        sync: false
+        sync: True
       - key: FORCE_SUB
-        sync: false
+        sync: True
       - key: LOG_CHANNEL
-        sync: false
+        sync: True
       - key: DB_NAME
-        sync: false
+        sync: True
       - key: DB_URL
-        sync: false
+        sync: True
       - key: START_PIC
-        sync: false
+        sync: True
       - key: ADMIN
-        sync: false
+        sync: True
       - key: WEBHOOK
-        sync: false
+        sync: True
